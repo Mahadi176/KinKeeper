@@ -7,7 +7,7 @@ const Footer = () => {
     return (
         <div className='bg-green-900 mx-auto text-center py-10 '>
           <div className='space-y-5'>
-             <h1 className='text-4xl text-white'><span className='font-bold'>Keen</span>Keeper</h1>
+             <h1 className='text-5xl text-white'><span className='font-bold'>Keen</span>Keeper</h1>
            <p className='text-white
            '>Your personal shelf of meaningful connections. Browse, tend, and nurture the relationships that matter most.</p>
           </div>
