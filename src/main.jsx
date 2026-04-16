@@ -5,6 +5,9 @@ import { RouterProvider } from 'react-router/dom'
 import LayoutPage from './layout/LayoutPage'
 import './index.css'
 import ErrorPage from './pages/ErrorPage/ErrorPage'
+import HomePage from './pages/HomePage/HomePage'
+import TimeLinePage from './pages/TimeLinePage/TimeLinePage'
+import StatsPage from './pages/StatsPage/StatsPage'
 
 const router = createBrowserRouter([
   {
@@ -12,7 +15,16 @@ const router = createBrowserRouter([
     element : <LayoutPage/>,
     children : [
       {
-
+        index : true,
+        element : <HomePage/>
+      },
+      {
+        path:'timeline',
+        element : <TimeLinePage/>
+      },
+      {
+        path:'stats',
+        element: <StatsPage/>
       }
     ],
     errorElement : <ErrorPage/>
