@@ -8,7 +8,7 @@ const Banner = () => {
             <button className='btn bg-green-900 text-white'>+ Add a Friend</button>
             <div className='flex justify-center gap-5 my-5 '>
                 <div className='text-center w-40 shadow-lg py-5'>
-                    <h1 className='text-xl font-bold'>10</h1>
+                    <h1 className='text-xl font-bold'>9</h1>
                     <p className='mt-2'>Total Friends</p>
                 </div>
                 <div className='text-center w-40 shadow-lg py-5'>

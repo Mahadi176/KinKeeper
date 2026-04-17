@@ -1,0 +1,110 @@
+[
+  {
+    "id": 1,
+    "name": "John Doe",
+    "picture": "src/assets/pictures/Friends2.png",
+    "email": "john@example.com",
+    "days_since_contact": 12,
+    "status": "overdue",
+    "tags": ["college", "close friend"],
+    "bio": "Met in university. Love hiking together.",
+    "goal": 14,
+    "next_due_date": "2025-07-20"
+  },
+  {
+    "id": 2,
+    "name": "Sarah Smith",
+    "picture": "src/assets/pictures/Friends1.png",
+    "email": "sarah@example.com",
+    "days_since_contact": 5,
+    "status": "upcoming",
+    "tags": ["work", "manager"],
+    "bio": "My team lead at work.",
+    "goal": 7,
+    "next_due_date": "2025-07-25"
+  },
+  {
+    "id": 3,
+    "name": "Alex Johnson",
+    "picture": "src/assets/pictures/Friends4.png",
+    "email": "alex@example.com",
+    "days_since_contact": 20,
+    "status": "overdue",
+    "tags": ["gym", "buddy"],
+    "bio": "Workout partner from gym.",
+    "goal": 10,
+    "next_due_date": "2025-07-15"
+  },
+  {
+    "id": 4,
+    "name": "Emily Davis",
+    "picture": "src/assets/pictures/Friends3.png",
+    "email": "emily@example.com",
+    "days_since_contact": 2,
+    "status": "on track",
+    "tags": ["family", "cousin"],
+    "bio": "Cousin living abroad.",
+    "goal": 30,
+    "next_due_date": "2025-08-10"
+  },
+  {
+    "id": 5,
+    "name": "Michael Brown",
+    "picture": "src/assets/pictures/Friends6.png",
+    "email": "michael@example.com",
+    "days_since_contact": 14,
+    "status": "overdue",
+    "tags": ["college", "project mate"],
+    "bio": "Worked on multiple projects together.",
+    "goal": 10,
+    "next_due_date": "2025-07-18"
+  },
+  {
+    "id": 6,
+    "name": "Jessica Wilson",
+    "picture": "src/assets/pictures/Friends5.png",
+    "email": "jessica@example.com",
+    "days_since_contact": 8,
+    "status": "upcoming",
+    "tags": ["friend", "travel"],
+    "bio": "Travel buddy from last trip.",
+    "goal": 14,
+    "next_due_date": "2025-07-28"
+  },
+  {
+    "id": 7,
+    "name": "David Lee",
+    "picture": "src/assets/pictures/Friends8.png",
+    "email": "david@example.com",
+    "days_since_contact": 30,
+    "status": "overdue",
+    "tags": ["mentor"],
+    "bio": "Guided me during my internship.",
+    "goal": 21,
+    "next_due_date": "2025-07-10"
+  },
+  {
+    "id": 8,
+    "name": "Sophia Martinez",
+    "picture": "src/assets/pictures/Friends7.png",
+    "email": "sophia@example.com",
+    "days_since_contact": 1,
+    "status": "on track",
+    "tags": ["neighbor"],
+    "bio": "Friendly neighbor.",
+    "goal": 15,
+    "next_due_date": "2025-08-05"
+  },
+  {
+    "id": 9,
+    "name": "Marie Khan",
+    "picture": "src/assets/pictures/Friends9.png",
+    "email": "daniel@example.com",
+    "days_since_contact": 11,
+    "status": "upcoming",
+    "tags": ["school", "friend"],
+    "bio": "High school friend.",
+    "goal": 14,
+    "next_due_date": "2025-07-22"
+  }
+]
