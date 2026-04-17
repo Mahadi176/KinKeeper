@@ -1,8 +1,12 @@
 import { Archive, BellRing, Mail, PhoneCall, Trash2, Video } from 'lucide-react';
-import React from 'react';
+import React, { useContext } from 'react';
 import { useLoaderData, useParams } from 'react-router';
+import { TimelineContext } from "../../Context/TimelineContext";
 
 const FriendDetails = () => {
+     
+    const { addAction } = useContext(TimelineContext);
+
     const {id} = useParams()
 
     const friends = useLoaderData()
@@ -74,21 +78,21 @@ const FriendDetails = () => {
                 <h1 className='text-2xl font-bold text-green-900 py-5'>Quick Check-In </h1>
                 <div className='flex gap-4'>
                     {/* call btn  */}
-                <div className='text-center bg-base-200 p-5 w-40 '>
+                <div onClick={() => addAction("Call", id, name)} className='text-center bg-base-200 p-5 w-40 '>
                     <div className='flex justify-center'>
                     <PhoneCall/>
                     </div>
                     <p>Call</p>
                 </div>
                 {/* text-btn  */}
-                <div className='text-center bg-base-200 p-5 w-40 '>
+                <div onClick={() => addAction("Text", id, name)} className='text-center bg-base-200 p-5 w-40 '>
                     <div className='flex justify-center'>
                     <Mail/>
                     </div>
                     <p>Text</p>
                 </div>
                 {/* video-btn  */}
-                <div className='text-center bg-base-200 p-5 w-40'>
+                <div onClick={() => addAction("Video", id, name)} className='text-center bg-base-200 p-5 w-40'>
                     <div className='flex justify-center'>
                     <Video/>
                     </div>
