@@ -1,8 +1,9 @@
 import React from 'react';
+import { Link } from 'react-router';
 
-const Friend = ({key,friend}) => {
+const Friend = ({friend}) => {
     return (
-        <div key={key} className='shadow-xl flex flex-col items-center  text-center rounded-lg my-10 py-5'>
+        <Link  to={`/friendDetail/${friend.id}`} className='shadow-xl flex flex-col items-center  text-center rounded-lg my-10 py-5'>
             <div>
             <img className='w-20 rounded-full' src={friend.picture} alt="" />
         </div>
@@ -22,7 +23,7 @@ const Friend = ({key,friend}) => {
             : friend.status === "upcoming"
             ? "bg-yellow-600"
             : "bg-green-800"}`}>{friend.status}</p>
-        </div>
+        </Link>
     );
 };
 

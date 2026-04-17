@@ -4,7 +4,7 @@ import Friends from './Friends';
 
 const HomePage = () => {
     return (
-        <div>
+        <div className='min-h-screen'>
             
             <Banner/>
             <Friends/>

@@ -1,5 +1,5 @@
 import React from 'react';
-import NavLogo from '../../assets/logo.png'
+import NavLogo from '/assets/logo.png'
 import { NavLink } from 'react-router';
 import { ChartLine, Clock, House } from 'lucide-react';
 const Navbar = () => {
