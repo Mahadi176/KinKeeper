@@ -2,6 +2,7 @@ import { Archive, BellRing, Mail, PhoneCall, Trash2, Video } from 'lucide-react'
 import React, { useContext } from 'react';
 import { useLoaderData, useParams } from 'react-router';
 import { TimelineContext } from "../../Context/TimelineContext";
+import { toast } from 'react-toastify';
 
 const FriendDetails = () => {
      
@@ -76,23 +77,23 @@ const FriendDetails = () => {
             </div>
             <div className='shadow-sm p-5 '>
                 <h1 className='text-2xl font-bold text-green-900 py-5'>Quick Check-In </h1>
-                <div className='flex gap-4'>
+                <div className='md:flex gap-4'>
                     {/* call btn  */}
-                <div onClick={() => addAction("Call", id, name)} className='text-center bg-base-200 p-5 w-40 '>
+                <div onClick={() => {addAction("Call", id, name); toast.success(`Call With ${name}`);}} className='btn text-center bg-base-200 p-5 w-40 h-20'>
                     <div className='flex justify-center'>
                     <PhoneCall/>
                     </div>
                     <p>Call</p>
                 </div>
                 {/* text-btn  */}
-                <div onClick={() => addAction("Text", id, name)} className='text-center bg-base-200 p-5 w-40 '>
+                <div onClick={() =>{ addAction("Text", id, name); toast.success(`Text With ${name}`);}} className='btn text-center bg-base-200 p-5 w-40 h-20 '>
                     <div className='flex justify-center'>
                     <Mail/>
                     </div>
                     <p>Text</p>
                 </div>
                 {/* video-btn  */}
-                <div onClick={() => addAction("Video", id, name)} className='text-center bg-base-200 p-5 w-40'>
+                <div onClick={() => {addAction("Video", id, name); toast.success(`Video Call With ${name}`);}} className='btn text-center bg-base-200 p-5 w-40 h-20'>
                     <div className='flex justify-center'>
                     <Video/>
                     </div>
